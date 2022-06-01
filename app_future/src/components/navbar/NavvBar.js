@@ -1,4 +1,5 @@
 import React from 'react';
+import CartWidget from '../CartWidget/CartWidget';
 const NavvBar =()=>{
   return(
     <nav class="navbar navbar-expand-lg bg-light">
@@ -16,9 +17,10 @@ const NavvBar =()=>{
             <a class="nav-link" href="#">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            
           </li>
           <li class="nav-item dropdown">
+            <CartWidget/>
             
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">Action</a></li>

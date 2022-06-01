@@ -1,6 +1,6 @@
 const CartWidget =()=>{
     return(
-        <i class="fa-solid fa-cart-shopping"></i>
+        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         )
         
     
