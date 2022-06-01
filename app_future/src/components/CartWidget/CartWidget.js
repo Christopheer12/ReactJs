@@ -3,6 +3,6 @@ const CartWidget =()=>{
         <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         )
         
-    
+
 }
 export default CartWidget
