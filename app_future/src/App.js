@@ -1,8 +1,5 @@
-
 import NavBar from './components/Navbar/NavBar';
-import CartWidget from './components/CartWidget/CartWidget';
 import ItemListContainer from './components/itemListContainer/ItemListContainer' 
-
 
 function App() {
   return (
@@ -22,3 +19,4 @@ function App() {
 }
 
 export default App;
+
