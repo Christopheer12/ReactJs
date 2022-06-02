@@ -1,5 +1,5 @@
 
-import NavvBar from './components/navbar/NavvBar';
+import NavBar from './components/Navbar/NavBar';
 import CartWidget from './components/CartWidget/CartWidget';
 import ItemListContainer from './components/itemListContainer/ItemListContainer' 
 
@@ -7,7 +7,7 @@ import ItemListContainer from './components/itemListContainer/ItemListContainer'
 function App() {
   return (
     <div className="App">
- <NavvBar/>
+ <NavBar/>
  
       <header className="App-header">
        <ItemListContainer/>
