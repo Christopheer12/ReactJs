@@ -1,8 +1,4 @@
-const ItemListContainer =()=>{
-    return(
-        <h2>Hola mundo</h2>
-        )
-        
-    
+const user ={
+    primerNombre: 'Criss'
 }
-export default ItemListContainer
+
