@@ -1,6 +1,4 @@
-import App from "../../App"
-
-const ItemListContainer =()=>{
+const ItemListContainer =(saludo)=>{
     return(
         <h2>Hola mundo</h2>
         
@@ -8,4 +6,5 @@ const ItemListContainer =()=>{
         
     
 }
+
 export default ItemListContainer

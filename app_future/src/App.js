@@ -1,19 +1,18 @@
 import NavBar from './components/Navbar/NavBar';
-import ItemListContainer from './components/itemListContainer/ItemListContainer' 
+import ItemListContainer from './components/itemListContainer/ItemListContainer'
 
-  function App() {
+function App() {
   return (
-  <div className="App">
-    <NavBar />
+    <div className="App">
+      <header className="App-header">
+        <NavBar />
+        <ItemListContainer saludo={'hola react'} />
 
-    <header className="App-header">
-      <ItemListContainer verde="batman"/>
+        <p>
+          primer desafio, aprendiendo a usar
+        </p>
 
-      <p>
-        primer desafio, aprendiendo a usar
-      </p>
-
-            </header>
+      </header>
     </div>
   );
 }
