@@ -7,7 +7,7 @@ import ItemListContainer from './components/itemListContainer/ItemListContainer'
     <NavBar />
 
     <header className="App-header">
-      <ItemListContainer />
+      <ItemListContainer verde="batman"/>
 
       <p>
         primer desafio, aprendiendo a usar
