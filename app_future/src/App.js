@@ -1,5 +1,7 @@
 import NavBar from './components/Navbar/NavBar';
 import ItemListContainer from './components/itemListContainer/ItemListContainer'
+import Count from './components/ItemCount/ItemCount';
+
 
 function App() {
   return (
@@ -7,10 +9,8 @@ function App() {
       <header className="App-header">
         <NavBar />
         <ItemListContainer saludo={'hola react'} />
+        <Count/>
 
-        <p>
-          primer desafio, aprendiendo a usar
-        </p>
 
       </header>
     </div>
