@@ -14,9 +14,9 @@ function Count(){
     return(
         <div>
             <p>{count}</p> 
-            <button onClick={mas}>+</button>
+           
             <button onClick={menos}>-</button>
-            
+            <button onClick={mas}>+</button>
         </div>
     )
 }
