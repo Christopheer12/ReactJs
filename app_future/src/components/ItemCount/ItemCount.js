@@ -1,12 +1,12 @@
 import {useState} from 'react'
 
 function Count(){
-    const[count, aumentaCount]= useState(0)
+    const[count, modificaCount]= useState(0)
     function mas(){
-        aumentaCount(count + 1)
+        modificaCount(count + 1)
     }
     function menos(){
-        aumentaCount(count - 1)
+        modificaCount(count - 1)
     }
   
 
