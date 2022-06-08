@@ -1,18 +1,25 @@
-import CountMas from "./CountMas";
-import CountMenos from "./CountMenos";
-function Count() {
-    return (
-      <div className="Count">
-       
-          
-          <CountMas/>
-          <CountMenos/>
+import {useState} from 'react'
+
+function Count(){
+    const[count, aumentaCount]= useState(0)
+    function mas(){
+        aumentaCount(count + 1)
+    }
+    function menos(){
+        aumentaCount(count - 1)
+    }
   
-  
-   
-      </div>
-    );
-  }
-  
-  export default Count;
-  
+
+    
+    return(
+        <div>
+            <p>{count}</p> 
+            <button onClick={mas}>+</button>
+            <button onClick={menos}>-</button>
+            
+        </div>
+    )
+}
+
+
+export default Count
