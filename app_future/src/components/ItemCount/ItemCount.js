@@ -1,8 +1,10 @@
 import {useState} from 'react'
 
-function Count(){
-   
-    const[count, modificaCount]= useState(0)
+
+
+
+const Count=({inicio, stock, onAdd})=>{
+     const[count, modificaCount]= useState(inicio)
     
     function mas(){
       
@@ -10,7 +12,7 @@ function Count(){
         modificaCount(count + 1)
     }
     function menos(){
-        modificaCount = ( count - 1 )
+        modificaCount ( count - 1 )
        
     }
   
