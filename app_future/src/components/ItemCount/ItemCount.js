@@ -12,6 +12,7 @@ const Count=({inicio, stock, onAdd})=>{
         modificaCount(count + 1)
     }
     function menos(){
+        if(count>1)
         modificaCount ( count - 1 )
        
     }
