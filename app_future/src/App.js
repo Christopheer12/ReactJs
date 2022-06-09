@@ -1,6 +1,7 @@
 import NavBar from './components/Navbar/NavBar';
 import ItemListContainer from './components/itemListContainer/ItemListContainer'
 import Count from './components/ItemCount/ItemCount';
+import Item from './components/Item/Item';
 import { useState } from 'react';
 
 
@@ -15,8 +16,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar />
-        <ItemListContainer saludo={'hola react'} />
         
+        <ItemListContainer saludo={'hola react'} />
+        <Item/>
        <Count inicio={1} stock={10} onAdd={onAdd}/>
 
 
