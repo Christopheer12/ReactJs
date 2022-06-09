@@ -20,10 +20,11 @@ const Count=({inicio, stock, onAdd})=>{
     
     return(
         <div>
-            <p>---{count}---</p> 
+            <p>///{count}\\\</p> 
            
             <button onClick={menos}>-</button>
             <button onClick={mas}>+</button>
+            <button onClick={()=>onAdd(count)}>agregar</button>
         </div>
     )
 }
