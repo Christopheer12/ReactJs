@@ -26,6 +26,8 @@ const getFetch =() =>{
             resolve(menu)
         }, 3000);
        
+
+       
     })
 }
 
@@ -36,9 +38,10 @@ const Item =()=>{
     })
     .catch(error => console.log(error))
     .finally(()=> console.log('biemvenido'))
-
+    
     return(
         <div> Item</div>
+        
     )
 }
 
