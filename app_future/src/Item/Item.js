@@ -48,9 +48,11 @@ const getFetch =() =>{
     return new Promise((resolve, reject)=>{
         setTimeout(() => {
             resolve(menu)
-        }, 15000);
+            console.log(menu);
+        }, 5000);
         setTimeout(() => {
             reject(menu2)
+            console.log(menu2);
         }, 10000);
        
 
