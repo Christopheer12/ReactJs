@@ -1,6 +1,6 @@
 import NavBar from './components/Navbar/NavBar';
-import ItemListContainer from './components/itemListContainer/ItemListContainer'
-import Count from './components/ItemCount/ItemCount';
+import ItemListContainer from './components/itemListContainer/ItemListContainer';
+import Count from './components/Count/Count';
 import { useState } from 'react';
 
 
