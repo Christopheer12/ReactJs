@@ -10,7 +10,9 @@ const ItemListContainer =()=>{
         .catch(error => console.log(error))
         .finally(()=> console.log('hola'))
    
-
+return(
+    <div>promesa</div>
+)
 
         
     
