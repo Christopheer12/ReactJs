@@ -1,7 +1,7 @@
 import NavBar from './components/Navbar/NavBar';
 import ItemListContainer from './components/itemListContainer/ItemListContainer'
 import Count from './components/ItemCount/ItemCount';
-import Item from './Item/Item';
+import Item from './utils/Item/Item';
 import { useState } from 'react';
 
 
