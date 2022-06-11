@@ -8,15 +8,18 @@ const ItemListContainer =()=>{
 useEffect(()=>{
        getFetch()
         .then((resp)=>{
-            console.log(resp)
+            setProducts(resp)
         })
         .catch(error => console.log(error))
-        .finally(()=> console.log('hola'))
+        .finally(()=> console.log())
    
-})
+},[])
+console.log(products)
      
 return(
-    <div>promesa</div>
+    <div>
+        {products.map(products=> <li key={products.id}>{products.nombre}{products.descripcion}</li>)}
+    </div>
 )
 
         
