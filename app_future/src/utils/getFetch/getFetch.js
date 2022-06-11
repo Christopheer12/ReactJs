@@ -1,3 +1,4 @@
+
 let products =[
     {
         id:'1',
@@ -26,7 +27,7 @@ let products =[
             setTimeout(() => {
                 resolve(products)
                 console.log(products);
-            }, 5000);
+            }, 1000);
         })
     }
 

@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar />
-        <ItemListContainer saludo={'hola react'} />
+        <ItemListContainer/>
         <Count inicio={1} stock={10} onAdd={onAdd} />
 
 

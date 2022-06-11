@@ -1,8 +1,8 @@
-import getFetch from "../../utils/getFetch/getFetch"
+import getFetch from "../../utils/getFetch/getFetch";
 
 
 const ItemListContainer =()=>{
-    
+
         getFetch()
         .then((resp)=>{
             console.log(resp)
