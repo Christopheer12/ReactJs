@@ -9,6 +9,7 @@ const Count=({inicio, stock, onAdd})=>{
     function mas(){
       
         
+        
         modificaCount(count + 1)
     }
     function menos(){
