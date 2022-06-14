@@ -15,9 +15,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar />
-        <ItemListContainer/>
+        <ItemListContainer />
+        <itemDetail/>
         <Count inicio={1} stock={10} onAdd={onAdd} />
-
+        
 
       </header>
     </div>
