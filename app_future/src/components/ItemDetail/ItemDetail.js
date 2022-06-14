@@ -12,7 +12,7 @@ const itemDetail = () => {
                
             </div>
             <div className="card-footer">
-                <button className="btn btn-outline-primary btn-block">like</button>
+                <button className="btn btn-outline-primary btn-block">ver detalles</button>
             </div>
         </div >
     </div>

@@ -2,7 +2,6 @@ import NavBar from './components/Navbar/NavBar';
 import ItemListContainer from './components/itemListContainer/ItemListContainer';
 import Count from './components/Count/Count';
 import { useState } from 'react';
-import ItemDetailContainer from './components/containers/ItemDetailContainer/ItemDetailContainer';
 
 
 
@@ -16,10 +15,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <NavBar />
-        <ItemListContainer />
-       <ItemDetailContainer/>
+        <ItemListContainer/>
         <Count inicio={1} stock={10} onAdd={onAdd} />
-        
+
 
       </header>
     </div>
@@ -27,4 +25,3 @@ function App() {
 }
 
 export default App;
-
