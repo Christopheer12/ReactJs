@@ -25,12 +25,12 @@ let products =[
     
     ];
 
-    const getFetch = (id)=>{
+    const getFetch = ()=>{
         return new Promise ((resolve)=>{
             setTimeout(() => {
-                resolve(products.fing)
+                resolve(products)
                 console.log(products);
-            }, 1000);
+            }, 10000);
         })
     }
 
