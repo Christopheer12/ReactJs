@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import getFetch from "../../utils/getFetch/getFetch";
-import ItemList from '../ItemList/ItemList';
+import getFetch from "../../../utils/getFetch/getFetch";
+import ItemList from '../../ItemList/ItemList';
 
 
 

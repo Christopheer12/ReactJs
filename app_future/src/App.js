@@ -1,9 +1,8 @@
 import NavBar from './components/Navbar/NavBar';
-import ItemListContainer from './components/itemListContainer/ItemListContainer';
+import ItemListContainer from './components/containers/itemListContainer/ItemListContainer'
 import Count from './components/Count/Count';
+import ItemDetailContainer from'./components/containers/ItemDetailContainer/ItemDetailContainer' 
 import { useState } from 'react';
-
-
 
 
 function App() {
@@ -18,8 +17,7 @@ function App() {
         <NavBar />
         <ItemListContainer/>
         <Count inicio={1} stock={10} onAdd={onAdd} />
-        
-
+        <ItemDetailContainer/>
 
       </header>
     </div>
