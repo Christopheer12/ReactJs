@@ -25,21 +25,46 @@ let products =[
     
     ];
 
-    const getFetch = (id)=>{
+    export const getFetch = ()=>{
         return new Promise ((resolve)=>{
             setTimeout(() => {
-                if(id){
-                    resolve(products.find(prod=> prod.id=== id))
-                } else{
+               
                     resolve(products)
-                }
-                
+               
                 console.log(products);
             }, 10000);
         })
     }
 
 
-export default getFetch
+
+
+
+///////////////////////
+
+
+let product =
+    {
+        id:'1',
+        nombre: 'pollo',
+        descripcion:'$500',
+        stock: 5,
+        foto:'https://www.carnave.com.ar/wp-content/uploads/2020/05/Pollo-entero.jpg'
+    };
+
+    export const getFetchOne = ()=>{
+        return new Promise ((resolve)=>{
+            setTimeout(() => {
+               
+                    resolve(product)
+
+                console.log(product);
+            }, 100);
+        })
+    }
+
+
+
+
 
 

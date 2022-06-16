@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import getFetch from "../../../utils/getFetch/getFetch";
+import { getFetch } from '../../../utils/getFetch/getFetch';
 import ItemList from '../../ItemList/ItemList';
 
 
@@ -7,7 +7,7 @@ import ItemList from '../../ItemList/ItemList';
 const ItemListContainer = () => {
     const [products, setProducts] = useState([])
     useEffect(() => {
-        getFetch()
+      getFetch()
             .then((resp) => {
                 setProducts(resp)
             })

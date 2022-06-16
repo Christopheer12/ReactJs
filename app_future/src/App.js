@@ -16,8 +16,9 @@ function App() {
         
         <NavBar />
         <ItemListContainer/>
-        <Count inicio={1} stock={10} onAdd={onAdd} />
         <ItemDetailContainer/>
+        <Count inicio={1} stock={10} onAdd={onAdd} />
+       
 
       </header>
     </div>
