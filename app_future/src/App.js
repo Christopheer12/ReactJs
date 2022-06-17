@@ -1,22 +1,20 @@
 import NavBar from './components/Navbar/NavBar';
 import ItemListContainer from './components/containers/itemListContainer/ItemListContainer'
 
-import ItemDetailContainer from'./components/containers/ItemDetailContainer/ItemDetailContainer' 
+import ItemDetailContainer from './components/containers/ItemDetailContainer/ItemDetailContainer'
 import { useState } from 'react';
 
 
 function App() {
-  
-  
+
+
   return (
     <div className="App">
       <header className="App-header">
-        
+
         <NavBar />
-        <ItemListContainer/>
-        <ItemDetailContainer/>
-        
-       
+        <ItemListContainer />
+        <ItemDetailContainer />
 
       </header>
     </div>
