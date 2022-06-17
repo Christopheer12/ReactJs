@@ -22,7 +22,7 @@ const Count=({inicio, stock, onAdd})=>{
     
     return(
         <div>
-            <p>///{count}\\\</p> 
+            <p>Agregar al carrito: {count} Unidades</p> 
            
             <button onClick={menos}>-</button>
             <button onClick={mas}>+</button>
