@@ -33,7 +33,7 @@ export const getFetch = (id) => {
             } else {
                 resolve(products)
             }
-        }, 10000);
+        }, 1000);
     })
 }
 

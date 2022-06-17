@@ -15,7 +15,7 @@ const {id} = useParams()
            
     }, [])
 
-    
+    console.log(products)
     return (
         <div>
             <ItemDetail products={products} />
