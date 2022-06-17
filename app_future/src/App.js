@@ -1,7 +1,7 @@
 import NavBar from './components/Navbar/NavBar';
 import ItemListContainer from './components/containers/itemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/containers/ItemDetailContainer/ItemDetailContainer';
-import { BrowserRouter, Routes, Route,Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NoExiste from './components/NoExiste/NoExiste'
 
 
@@ -12,7 +12,7 @@ function App() {
     <div>
       
       <BrowserRouter>
-        <NavBar />
+        <NavBar  />
         <Routes>
           <Route path='/' element={<ItemListContainer />}/>
           <Route path='/detalles' element={<ItemDetailContainer />}/>
