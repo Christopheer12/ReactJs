@@ -44,31 +44,3 @@ export const getFetch = (id) => {
 
 
 
-///////////////////////
-
-
-/* let product =
-    {
-        id:'1',
-        nombre: 'pollo',
-        descripcion:'$500',
-        stock: 5,
-        foto:'https://www.carnave.com.ar/wp-content/uploads/2020/05/Pollo-entero.jpg'
-    };
-
-    export const getFetchOne = ()=>{
-        return new Promise ((resolve)=>{
-            setTimeout(() => {
-               
-                    resolve(product)
-
-                console.log(product);
-            }, 100);
-        })
-    }
- */
-
-
-
-
-
