@@ -7,12 +7,12 @@ import { getFetch } from '../../../utils/getFetch/getFetch';
 
 const ItemDetailContainer = () => {
     const [products, setProduct] = useState({})
-const {id} = useParams()
+    const { id } = useParams()
     useEffect(() => {
         getFetch(id)
-            .then((resp) =>  setProduct(resp))
+            .then((resp) => setProduct(resp))
             .catch(error => console.log(error))
-           
+
     }, [])
 
     console.log(products)
