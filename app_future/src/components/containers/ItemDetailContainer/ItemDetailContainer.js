@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
     const [products, setProduct] = useState({})
 /* const {id} = useParams() */
     useEffect(() => {
-        getFetch('3')
+        getFetch(id)
             .then((resp) =>  setProduct(resp))
             .catch(error => console.log(error))
            

@@ -1,5 +1,8 @@
-import React from 'react';
-import CartWidget from '../CartWidget/CartWidget';
+import { Cart } from "../Cart/Cart";
+import { Link,NavLink } from "react-router-dom";
+import CartWidget from "../CartWidget/CartWidget";
+
+
 const NavBar =()=>{
   return(
     <nav class="navbar navbar-expand-lg bg-light">
@@ -11,17 +14,12 @@ const NavBar =()=>{
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
+          <Link to='' class="nav-link active" aria-current="page" >Home</Link></li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nosotros</a>
-          </li>
+          <Link to='/estado/Crudo' class="nav-link active" aria-current="page" >Crudo</Link></li>
           <li class="nav-item">
-            
-          </li>
+          <Link to='/estado/Cocido' class="nav-link active" aria-current="page" >Cocido</Link></li>
           <li class="nav-item dropdown">
-            <CartWidget/>
-            
             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li><a class="dropdown-item" href="#">Action</a></li>
               <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -30,6 +28,10 @@ const NavBar =()=>{
           </li>
         </ul>
       </div>
+      <Link to='./Cart' class="nav-link active" aria-current="page" >
+     <CartWidget/>
+      </Link>
+     
     </div>
   </nav>
   );
