@@ -26,7 +26,7 @@ const Count=({inicio, stock, onAdd})=>{
            
             <button onClick={menos}>-</button>
             <button onClick={mas}>+</button>
-            <button onClick={()=>onAdd(count)}>agregar</button>
+            <button onClick={()=>onAdd(count)}>agregar al carrito</button>
         </div>
     )
 }
