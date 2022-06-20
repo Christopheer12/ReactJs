@@ -16,7 +16,7 @@ const ItemDetailContainer = () => {
     }, [])
 
     console.log(products)
-    return (
+    return ( 
         <div>
             <ItemDetail products={products} />
         </div>
