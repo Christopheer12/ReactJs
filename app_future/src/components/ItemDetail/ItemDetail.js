@@ -3,8 +3,8 @@ import Count from '../Count/Count'
 const ItemDetail = ({products}) => {
   
   
-  const onAdd = (cant) => {
-    console.log(cant)
+  const onAdd = (count) => {
+    console.log(count)
   }
     
     return (
