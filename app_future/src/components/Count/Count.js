@@ -36,9 +36,11 @@ const Count=({inicio, stock, onAdd})=>{
             
             
             
+            
         </div>
     )
 }
+
 
 
 export default Count
