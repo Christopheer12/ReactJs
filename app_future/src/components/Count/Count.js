@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -25,11 +26,16 @@ const Count=({inicio, stock, onAdd})=>{
     
     return(
         <div>
-            <p>Agregar al carrito: {count} Unidades</p> 
+            <p>Quieres llevarte: {count} Unidades</p> 
            
             <button onClick={menos}>-</button>
             <button onClick={mas}>+</button>
+            <Link to='/Cart'>
             <button onClick={subirACarrito}>agregar al carrito</button>
+            </Link>
+            
+            
+            
         </div>
     )
 }
