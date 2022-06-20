@@ -8,9 +8,7 @@ const Count=({inicio, stock, onAdd})=>{
      const[count, modificaCount]= useState(inicio)
     
     function mas(){
-      
-        
-        
+
         modificaCount(count + 1)
     }
     function menos(){
@@ -33,9 +31,9 @@ const Count=({inicio, stock, onAdd})=>{
             <Link to='/Cart'>
             <button onClick={subirACarrito}>agregar al carrito</button>
             </Link>
-            
-            
-            
+            <Link to='/'>
+            <button onClick={()=>console.log('ir al inicio')}>seguir comprando</button>
+            </Link>
             
         </div>
     )
