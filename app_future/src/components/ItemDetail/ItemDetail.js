@@ -5,6 +5,7 @@ const ItemDetail = ({products}) => {
   
   const onAdd = (count) => {
     console.log(count)
+    
   }
     
     return (
