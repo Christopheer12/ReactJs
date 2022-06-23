@@ -28,9 +28,9 @@ const Count=({inicio, stock, onAdd})=>{
            
             <button onClick={menos}>-</button>
             <button onClick={mas}>+</button>
-            <Link to='/Cart'>
+            
             <button onClick={subirACarrito}>agregar al carrito</button>
-            </Link>
+           
             <Link to='/'>
             <button onClick={()=>console.log('ir al inicio')}>seguir comprando</button>
             </Link>

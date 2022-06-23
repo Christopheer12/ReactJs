@@ -4,13 +4,13 @@ import Count from '../Count/Count'
 
 const ItemDetail = ({products}) => {
   
-  const{addToCart}= useContext(CartContext)
+  const{cart, addToCart}= useContext(CartContext)
   const onAdd = (count) => {
     console.log(count)
     addToCart({...products, cantidad: count})
     
   }
-    
+    console.log(cart)
     return (
         <div class="container">
         <div class="row">
