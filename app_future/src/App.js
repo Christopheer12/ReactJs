@@ -4,7 +4,8 @@ import ItemDetailContainer from './components/containers/ItemDetailContainer/Ite
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NoExiste from './components/NoExiste/NoExiste'
 import { Cart } from './components/Cart/Cart';
-import { CartContext } from './components/Context/CartContext';
+import { CartContextProvider } from './components/Context/CartContext';
+
 
 
 
@@ -13,8 +14,7 @@ function App() {
 
 
   return (
-    <CartContext.Provider><div>
-      
+<CartContextProvider><div>
       <BrowserRouter>
         <NavBar  />
         <Routes>
@@ -24,10 +24,10 @@ function App() {
           <Route path='/Cart' element={<Cart/>}/>
           <Route path='*' element={<NoExiste/>}/>
         </Routes>
-      </BrowserRouter>
-      
+      </BrowserRouter> 
     </div>
-    </CartContext.Provider>
+   </CartContextProvider>
+    
     
   );
 }
