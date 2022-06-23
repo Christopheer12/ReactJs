@@ -4,6 +4,7 @@ import ItemDetailContainer from './components/containers/ItemDetailContainer/Ite
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NoExiste from './components/NoExiste/NoExiste'
 import { Cart } from './components/Cart/Cart';
+import { CartContext } from './components/Context/CartContext';
 
 
 
@@ -12,7 +13,7 @@ function App() {
 
 
   return (
-    <div>
+    <CartContext.Provider><div>
       
       <BrowserRouter>
         <NavBar  />
@@ -26,6 +27,8 @@ function App() {
       </BrowserRouter>
       
     </div>
+    </CartContext.Provider>
+    
   );
 }
 
