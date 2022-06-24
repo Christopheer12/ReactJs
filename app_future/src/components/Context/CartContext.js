@@ -9,11 +9,16 @@ export const CartContextProvider =({children})=>{
             ...cart,
             item])
     }
+    const vaciarCarrito =()=>{
+        setCart([])
+
+    }
     return(
         <CartContext.Provider 
         value={{
             cart,
-            addToCart
+            addToCart,
+            vaciarCarrito
         }}>
         {children}
         </CartContext.Provider>
