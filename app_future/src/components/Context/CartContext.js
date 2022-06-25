@@ -14,7 +14,6 @@ export const CartContextProvider = ({ children }) => {
  
     }
    
-
     const IsInCart = (id) => cart.some((i) => i.id === id);
 
 
