@@ -6,6 +6,7 @@ export const Cart = () => {
   const{cart, vaciarCarrito} = useCartContext()
   return (
     <div>
+      <div>{cart.length<1?<p>Carrito vacio</p>:<p>Tu articulos:</p>}</div>
       <ul>
         {cart.map(item =><li key={item.id}>
           <div className='w-25'>
