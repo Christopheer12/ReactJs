@@ -1,26 +1,40 @@
 import { createContext, useContext, useState } from "react";
 
- const CartContext = createContext([]);
-export const useCartContext =()=> useContext(CartContext)
-export const CartContextProvider =({children})=>{
-    const[cart, setCart]=useState([])
-    const addToCart =(item)=>{
-        setCart([
-            ...cart,
-            item])
+const CartContext = createContext([]);
+export const useCartContext = () => useContext(CartContext)
+export const CartContextProvider = ({ children }) => {
+    const [cart, setCart] = useState([])
+    const addToCart = (item, cantidad) => {
+        if (IsInCart(item.id)) {
+            alert('ya se agrego anteriormente')
+        } else {
+            setCart([...cart, { item, cantidad }]);
+            alert('agreegado')
+        }
+ 
     }
-    const vaciarCarrito =()=>{
-        setCart([])
+   
 
+    const IsInCart = (id) => {
+        return cart && cart.some((i) => i.item.id === id);
     }
-    return(
-        <CartContext.Provider 
-        value={{
-            cart,
-            addToCart,
-            vaciarCarrito
-        }}>
-        {children}
+    
+    const vaciarCarrito = () => {
+        setCart([])
+    }
+
+    
+
+
+    return (
+        <CartContext.Provider
+            value={{
+                cart,
+                addToCart, 
+                vaciarCarrito,
+               
+            }}>
+            {children}
         </CartContext.Provider>
     )
 }
