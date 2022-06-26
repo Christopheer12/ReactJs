@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../Context/CartContext'
 
-export const Cart = () => {
+const Cart = () => {
   const{cart, vaciarCarrito} = useCartContext()
   return (
     <div>
@@ -29,3 +29,4 @@ export const Cart = () => {
     </div>
   )
 }
+export default Cart;
