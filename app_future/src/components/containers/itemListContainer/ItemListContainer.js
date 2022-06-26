@@ -9,7 +9,6 @@ const ItemListContainer = () => {
     const [products, setProducts] = useState([])
     const { estadoId } = useParams()
 
-
     useEffect(() => {
         if (estadoId) {
             getFetch()
