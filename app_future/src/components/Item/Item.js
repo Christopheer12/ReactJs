@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { useCartContext } from '../Context/CartContext'
 
 const Item = ({ product }) => {
-    const{EliminarItem,CartContext}= useCartContext()
+    const{EliminarItem}= useCartContext()
     const{id} = product;
     return (
 
