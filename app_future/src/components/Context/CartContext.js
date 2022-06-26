@@ -14,7 +14,7 @@ export const CartContextProvider = ({ children }) => {
  
     }
 const EliminarItem =(id)=>{
-    const items = cart.filter((product)=> product.id !==id)
+    const items = cart.filter(()=> id !==id)
     setCart(items)
     alert('eliminado')
     
