@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../Context/CartContext'
 
-const Cart = () => {
-  const{cart, vaciarCarrito} = useCartContext()
+const Cart = (product) => {
+  const{cart, vaciarCarrito,EliminarItem} = useCartContext()
+  const{id} = product;
   return (
     <div>
       <div>{cart.length<1?<p>Carrito vacio</p>:<p>Tu articulos:</p>}</div>
@@ -17,7 +18,10 @@ const Cart = () => {
           {item.nombre}
           {item.precio}
           {item.estado} 
-          Cantidad agregada {item.cantidad}</li>)}
+          
+          Cantidad agregada {item.cantidad } 
+          <button onClick={()=>EliminarItem(id) }>Eliminar</button>
+          </li>)}
       </ul>
       <div>
         <button onClick={vaciarCarrito}> Vaciar carrito</button>
