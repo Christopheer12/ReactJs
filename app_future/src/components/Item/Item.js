@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
-import { useCartContext } from '../Context/CartContext'
+
 
 const Item = ({ product }) => {
-    const{EliminarItem}= useCartContext()
-    const{id} = product;
+    
     return (
 
         <div className='col-md-4 p-1'>
@@ -20,7 +19,6 @@ const Item = ({ product }) => {
                         <button className="btn btn-outline-primary btn-block">ver mas detalles</button>
                     </Link>
 
-    <button onClick={()=>EliminarItem(id) }>Eliminar</button>
 
                 </div>
             </div >

@@ -20,7 +20,7 @@ const Cart = (product) => {
           {item.estado} 
           
           Cantidad agregada {item.cantidad } 
-          <button onClick={(id)=>EliminarItem(id) }>Eliminar</button>
+          <button onClick={()=>EliminarItem(item.id) }>Eliminar</button>
           </li>)}
       </ul>
       <div>
