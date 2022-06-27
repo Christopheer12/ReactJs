@@ -23,7 +23,6 @@ const EliminarItem =(id)=>{
     const IsInCart = (id) => cart.some((i) => i.id === id);
 
 
-    
     const vaciarCarrito = () => {
         setCart([])
     }
