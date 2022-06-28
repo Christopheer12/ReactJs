@@ -28,7 +28,7 @@ const EliminarItem =(id)=>{
     }
 
     const precioTotal =()=>{
-        return cart.reduce((acum,i)=> acum + i.cantidad * i.item.precio, 0)
+        return cart.reduce((acum,i)=> acum + i.cantidad * i.precio, 0)
     }
 
 

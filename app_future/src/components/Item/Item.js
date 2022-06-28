@@ -7,7 +7,7 @@ const Item = ({ product }) => {
         <div className='col-md-4 p-1'>
             <div className="card w-100 mt-5">
                 <div className="card-header">
-                    {`${product.nombre} - ${product.precio}`}
+                    {product.nombre} <p>Precio ${product.precio}</p> 
                 </div>
                 <div className="card-body">
                     <img src={product.foto} className='w-50' />

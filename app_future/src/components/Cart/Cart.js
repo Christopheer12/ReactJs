@@ -15,7 +15,7 @@ const Cart = () => {
           </div>
           
           {item.nombre}
-          {item.precio}
+         <p> ${item.precio} por unidad</p>
           {item.estado} 
           
           Cantidad agregada {item.cantidad } 
@@ -29,7 +29,7 @@ const Cart = () => {
       <Link to='/'>
             <button onClick={()=>console.log('ir al inicio')}>seguir comprando</button>
             </Link>
-            <p>{precioTotal()}</p>
+            <p>el precio total del carrito es : ${precioTotal()}</p>
     </div>
   )
 }
