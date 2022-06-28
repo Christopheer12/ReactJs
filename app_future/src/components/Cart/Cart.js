@@ -2,9 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../Context/CartContext'
 
-const Cart = (product) => {
+const Cart = () => {
   const{cart, vaciarCarrito,EliminarItem} = useCartContext()
-  const{id} = product;
   return (
     <div>
       <div>{cart.length<1?<p>Carrito vacio</p>:<p>Tu articulos:</p>}</div>
