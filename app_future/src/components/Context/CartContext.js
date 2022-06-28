@@ -4,7 +4,7 @@ const CartContext = createContext([]);
 export const useCartContext = () => useContext(CartContext)
 export const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState([])
-    const addToCart = (item) => {
+    const addToCart = (item,cantidad) => {
         if (IsInCart(item.id)) {
             (cart.find(product =>product.id === item.id)).cantidad+= item.cantidad
             alert('ya se agrego anteriormente')
@@ -27,7 +27,9 @@ const EliminarItem =(id)=>{
         setCart([])
     }
 
-    
+    const precioTotal =()=>{
+        return cart.reduce((acum,i)=> acum + i.cantidad * i.tem.precio, 0)
+    }
 
 
     return (
@@ -37,6 +39,7 @@ const EliminarItem =(id)=>{
                 addToCart, 
                 vaciarCarrito,
                 EliminarItem,
+                precioTotal,
                
             }}>
             {children}
