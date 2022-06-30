@@ -50,10 +50,11 @@ const ItemListContainer = () => {
         const db = getFirestore()
         const queryCollection = collection(db, 'items')
         getDocs(queryCollection)
-            .then(data => console.log(data))
+            .then(data => setProducts(data.docs.map(item =>({id: item.id, ...item.data()})))) 
         console.log(products)
 
-    })
+    },[])
+    console.log(products)
 
 
 
