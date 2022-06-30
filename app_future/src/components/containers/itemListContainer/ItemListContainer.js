@@ -6,16 +6,18 @@ import ItemList from '../../ItemList/ItemList';
 
 const ItemListContainer = () => {
     const [bool, setBool] = useState(true)
-    /* const [products, setProducts] = useState([])
-    const { estadoId } = useParams() */
+    const [products, setProducts] = useState([])
+   /*  const { estadoId } = useParams() */
 
     useEffect(() => {
         const db = getFirestore()
         const queryItem = doc(db, 'items', '3NOKnzHPi8W5NOrxjaaZ')
         getDoc(queryItem)
-        .then(resp =>console.log(resp))
-
-    }, [bool])
+        .then(resp =>setProducts({id: resp.id, ...resp.data()}))
+        .catch(error => console.log(error))
+        
+    }, [bool]) 
+    console.log(products)
     /* if (estadoId) {
         getFetch()
             .then((resp) => {
@@ -38,7 +40,7 @@ const ItemListContainer = () => {
 
     return (
         <div>
-           {/*  <ItemList products={products} /> */}
+         {/*   { <ItemList products={products} />} */}
         </div>
     )
 }
