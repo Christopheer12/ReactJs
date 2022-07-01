@@ -8,7 +8,7 @@ import { collection, doc, getDocs, getFirestore } from 'firebase/firestore'
 
 
 const ItemDetailContainer = () => {
-    const [products, setProduct] = useState({})
+    const [products, setProducts] = useState({})
     const [loading, setLoading] = useState(true)
     const { id } = useParams()
 
@@ -16,7 +16,7 @@ const ItemDetailContainer = () => {
 
         const db = getFirestore()
         const queryItem = doc(db, 'items', id ) 
-        getDocs(queryCollection)
+        getDocs(queryItem)
             .then(data => setProducts(data.docs.map(item =>({id: item.id, ...item.data()})))) 
             .catch(error => console.log(error))
             .finally(() => console.log(false))
