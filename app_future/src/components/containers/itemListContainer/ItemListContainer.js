@@ -51,7 +51,8 @@ const ItemListContainer = () => {
         const queryCollection = collection(db, 'items')
         getDocs(queryCollection)
             .then(data => setProducts(data.docs.map(item =>({id: item.id, ...item.data()})))) 
-        console.log(products)
+            .catch(error => console.log(error))
+            .finally(() => console.log(false))
 
     },[])
     console.log(products)
@@ -61,7 +62,7 @@ const ItemListContainer = () => {
 
     return (
         <div>
-            {/*   { <ItemList products={products} />} */}
+              { <ItemList products={products} />}
         </div>
     )
 }
