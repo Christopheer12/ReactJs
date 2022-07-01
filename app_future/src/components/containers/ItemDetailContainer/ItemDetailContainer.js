@@ -3,12 +3,12 @@ import ItemDetail from '../../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
 import { getFetch } from '../../../utils/getFetch/getFetch';
 import { Loading } from '../../../utils/Loading/Loading';
-import { collection, doc, getDocs, getFirestore } from 'firebase/firestore'
+import { collection, doc, getDoc, getFirestore } from 'firebase/firestore'
 
 
 
 const ItemDetailContainer = () => {
-    const [products, setProducts] = useState({})
+    const [products, setProduct] = useState({})
     const [loading, setLoading] = useState(true)
     const { id } = useParams()
 
@@ -16,8 +16,8 @@ const ItemDetailContainer = () => {
 
         const db = getFirestore()
         const queryItem = doc(db, 'items', id ) 
-        getDocs(queryItem)
-            .then(data => setProducts(data.docs.map(item =>({id: item.id, ...item.data()})))) 
+        getDoc(queryItem)
+            .then(data => setProduct(data.docs.map(item =>({id: item.id, ...item.data()})))) 
             .catch(error => console.log(error))
             .finally(() => console.log(false))
 
