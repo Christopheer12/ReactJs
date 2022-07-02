@@ -4,10 +4,10 @@ import ItemList from '../../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
-  
+
     const [products, setProducts] = useState([])
-    const {estadoId } = useParams() 
-    
+    const { estadoId } = useParams()
+
 
 
     useEffect(() => {
@@ -16,43 +16,30 @@ const ItemListContainer = () => {
         const queryCollection = collection(db, 'items')
 
         if (estadoId) {
-            
-            const queryCollectionFilter = query( queryCollection, where( 'estado', '==', estadoId ) ) 
-            getDocs(queryCollectionFilter)
-            .then( data => setProducts( data.docs.map( item => ( { id: item.id, ...item.data() } )  ) ) )
-            .catch(err => console.log(err))
-            .finally(() => console.log(false))
 
-            
+            const queryCollectionFilter = query(queryCollection, where('estado', '==', estadoId))
+            getDocs(queryCollectionFilter)
+                .then(data => setProducts(data.docs.map(item => ({ id: item.id, ...item.data() }))))
+                .catch(err => console.log(err))
+                .finally(() => console.log(false))
+
+
         } else {
-           
+
             getDocs(queryCollection)
-            .then( data => setProducts( data.docs.map( item => ( { id: item.id, ...item.data() } )  ) ) )
-            .catch(err => console.log(err))
-            .finally(() => console.log(false))
+                .then(data => setProducts(data.docs.map(item => ({ id: item.id, ...item.data() }))))
+                .catch(err => console.log(err))
+                .finally(() => console.log(false))
 
         }
-        
-    }, [estadoId])  
 
+    }, [estadoId])
 
-
-
-       /*  const queryCollectionFilter = estado ? query(queryCollection,where('estado', '==', 'estado')) : queryCollection
-        getDocs(queryCollectionFilter)
-            .then(data => setProducts(data.docs.map(item =>({id: item.id, ...item.data()})))) 
-            .catch(error => console.log(error))
-            .finally(() => console.log(false)) */
-
-   
     console.log(products)
-
-
-
 
     return (
         <div>
-              { <ItemList products={products} />}
+            {<ItemList products={products} />}
         </div>
     )
 }
