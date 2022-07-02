@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import swal from "sweetalert";
 
 const CartContext = createContext([]);
 export const useCartContext = () => useContext(CartContext)
@@ -7,17 +8,18 @@ export const CartContextProvider = ({ children }) => {
     const addToCart = (item) => {
         if (IsInCart(item.id)) {
             (cart.find(product =>product.id === item.id)).cantidad+= item.cantidad
-            alert('ya se agrego anteriormente')
+            swal('ya se agrego anteriormente')
+            
         } else {
             setCart([...cart,  item ]);
-            alert('agreegado')
+            swal('agreegado')
         }
  
     }
 const EliminarItem =(id)=>{
     const items = cart.filter((product)=> product.id !==id)
     setCart(items)
-    alert('eliminado')
+    swal('eliminado')
     
 }   
     const IsInCart = (id) => cart.some((i) => i.id === id);
@@ -25,6 +27,7 @@ const EliminarItem =(id)=>{
 
     const vaciarCarrito = () => {
         setCart([])
+        swal('a vaciado el carrito')
     }
 
     const precioTotal =()=>{
