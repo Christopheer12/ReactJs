@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
 import ItemDetail from '../../ItemDetail/ItemDetail';
 import { useParams } from 'react-router-dom';
-import { getFetch } from '../../../utils/getFetch/getFetch';
 import { Loading } from '../../../utils/Loading/Loading';
-import { collection, doc, getDoc, getFirestore } from 'firebase/firestore'
+import {  doc, getDoc, getFirestore } from 'firebase/firestore'
 
 
 
@@ -21,14 +20,7 @@ const ItemDetailContainer = () => {
             .catch(error => console.log(error))
             .finally(() => setLoading(false))
 
-
-
-        /*  getFetch(id)
-             .then((resp) => setProduct(resp))
-             .catch(error => console.log(error))
-             .finally(()=>setLoading(false))
-  */
-    }, [])
+    }, )
 
     console.log(products)
     return (
