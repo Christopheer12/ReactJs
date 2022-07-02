@@ -1,7 +1,6 @@
 
 import { useCartContext } from '../Context/CartContext'
 import Count from '../Count/Count'
-
 const ItemDetail = ({products}) => {
   
   const{ addToCart}= useCartContext()

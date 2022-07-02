@@ -14,8 +14,9 @@ const Cart = () => {
       const id = ItemDetail.id
       const nombre = ItemDetail.nombre
       const precio = ItemDetail.precio * ItemDetail.cantidad
+      const cantidad = ItemDetail.cantidad
 
-      return { id, nombre, precio }
+      return { id, nombre, precio,cantidad }
 
     })
     console.log(orden)
