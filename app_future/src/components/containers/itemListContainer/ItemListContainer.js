@@ -32,6 +32,7 @@ const ItemListContainer = () => {
                 .finally(() => console.log(false))
 
         }
+        
 
     }, [estadoId])
 
