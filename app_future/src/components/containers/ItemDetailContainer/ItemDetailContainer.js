@@ -22,7 +22,7 @@ const ItemDetailContainer = () => {
 
     }, )
 
-    console.log(products)
+   
     return (
         <div>
             <ItemDetail products={products} />
