@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 
 
-const Count=({inicio, stock, onAdd})=>{
+const Count=({inicio, onAdd})=>{
      const[count, modificaCount]= useState(inicio)
     
     function mas(){

@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import { useCartContext } from '../Context/CartContext'
-
 const Item = ({ product }) => {
     return (
 

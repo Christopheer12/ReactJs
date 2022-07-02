@@ -4,7 +4,7 @@ const CartContext = createContext([]);
 export const useCartContext = () => useContext(CartContext)
 export const CartContextProvider = ({ children }) => {
     const [cart, setCart] = useState([])
-    const addToCart = (item,cantidad) => {
+    const addToCart = (item) => {
         if (IsInCart(item.id)) {
             (cart.find(product =>product.id === item.id)).cantidad+= item.cantidad
             alert('ya se agrego anteriormente')
