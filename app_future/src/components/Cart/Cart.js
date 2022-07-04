@@ -1,3 +1,4 @@
+import { addDoc, collection, getFirestore } from 'firebase/firestore'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../Context/CartContext'
@@ -18,7 +19,10 @@ const Cart = () => {
       return { id, nombre, precio,cantidad }
 
     })
-    console.log(orden)
+    const db = getFirestore()
+    const orderColletion = collection(db, 'orders')
+    addDoc(orderColletion, orden)
+    .then(rest=>console.log(rest))
   }
   return (
     <div>
