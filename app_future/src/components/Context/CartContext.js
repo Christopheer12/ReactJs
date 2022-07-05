@@ -27,7 +27,7 @@ const EliminarItem =(id)=>{
 
     const vaciarCarrito = () => {
         setCart([])
-        swal('a vaciado el carrito')
+        
     }
 
     const precioTotal =()=>{
