@@ -20,23 +20,23 @@ const ItemListContainer = () => {
             const queryCollectionFilter = query(queryCollection, where('estado', '==', estadoId))
             getDocs(queryCollectionFilter)
                 .then(data => setProducts(data.docs.map(item => ({ id: item.id, ...item.data() }))))
-                .catch(err => console.log(err))
-                .finally(() => console.log(false))
+                .catch()
+                .finally()
 
 
         } else {
 
             getDocs(queryCollection)
                 .then(data => setProducts(data.docs.map(item => ({ id: item.id, ...item.data() }))))
-                .catch(err => console.log(err))
-                .finally(() => console.log(false))
+                .catch()
+                .finally()
 
         }
         
 
     }, [estadoId])
 
-    console.log(products)
+   
 
     return (
         <div>

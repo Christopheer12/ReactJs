@@ -22,7 +22,7 @@ const Cart = () => {
     const db = getFirestore()
     const orderColletion = collection(db, 'orders')
     addDoc(orderColletion, orden)
-    .then(rest=>console.log(rest))
+    .then(rest=>(rest))
   }
   return (
     <div>
@@ -47,7 +47,7 @@ const Cart = () => {
       </div>
 
       <Link to='/'>
-        <button onClick={() => console.log('ir al inicio')}>seguir comprando</button>
+        <button onClick>seguir comprando</button>
       </Link>
       <p>el precio total del carrito es : ${precioTotal()}</p>
       <div>
