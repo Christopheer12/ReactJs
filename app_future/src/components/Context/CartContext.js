@@ -27,6 +27,7 @@ const EliminarItem =(id)=>{
 
     const vaciarCarrito = () => {
         setCart([])
+        alert("se borro todo lo del carrito")
         
     }
 
