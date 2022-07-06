@@ -5,6 +5,7 @@ import { useCartContext } from '../Context/CartContext'
 const Cart = () => {
   const { cart, vaciarCarrito, EliminarItem, precioTotal } = useCartContext()
 
+  
   function finalizarCompra(e) {
     e.preventDefault()
     let orden = {}
