@@ -16,7 +16,7 @@ const Cart = () => {
       const nombre = ItemDetail.nombre
       const precio = ItemDetail.precio * ItemDetail.cantidad
       const cantidad = ItemDetail.cantidad
-
+      alert("compra finalizada, Ya puede borra el carrito o cerrar la pagina")
       return { id, nombre, precio,cantidad }
 
     })
