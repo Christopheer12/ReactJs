@@ -19,6 +19,7 @@ const Cart = () => {
       alert("compra finalizada, Ya puede borra el carrito o cerrar la pagina") 
       return { id, nombre, precio,cantidad }
 
+      
     })
     const db = getFirestore()
     const orderColletion = collection(db, 'orders')
