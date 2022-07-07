@@ -18,6 +18,7 @@ const Cart = () => {
 
       return { id, nombre, precio,cantidad }
 
+      
     })
     const db = getFirestore()
     const orderColletion = collection(db, 'orders')
