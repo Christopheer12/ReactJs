@@ -3,6 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../Context/CartContext'
 import { Loading } from '../../utils/Loading/Loading'
+import swal from "sweetalert"
 
 const Cart = () => {
   const { cart, vaciarCarrito, EliminarItem, precioTotal } = useCartContext()
@@ -18,7 +19,7 @@ const Cart = () => {
       const nombre = ItemDetail.nombre
       const precio = ItemDetail.precio * ItemDetail.cantidad
       const cantidad = ItemDetail.cantidad
-      alert("compra finalizada, Ya puede borra el carrito o cerrar la pagina") 
+      swal("Pedido enviado!", " Ya puede borra el carrito o cerrar la pagina!", "success");
       return { id, nombre, precio,cantidad }
 
       
