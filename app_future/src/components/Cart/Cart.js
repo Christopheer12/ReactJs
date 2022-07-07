@@ -2,6 +2,8 @@ import { addDoc, collection, getFirestore } from 'firebase/firestore'
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useCartContext } from '../Context/CartContext'
+import { Loading } from '../../utils/Loading/Loading'
+
 const Cart = () => {
   const { cart, vaciarCarrito, EliminarItem, precioTotal } = useCartContext()
 
@@ -49,8 +51,8 @@ const Cart = () => {
       </div>
 
       <Link to='/'>
-        <button onClick>seguir comprando</button>
-      </Link>
+                <button onClick={Loading}>seguir comprando</button>
+            </Link>
       <p>el precio total del carrito es : ${precioTotal()}</p>
       <div>
         <button onClick={finalizarCompra}> Terminar compra</button>
