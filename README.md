@@ -4,6 +4,7 @@
 <h2 class="code-line" data-line-start=4 data-line-end=5 ><a id="Prceso_de_aprendizaje_4"></a>Prceso de aprendizaje</h2>
 <h3 class="code-line" data-line-start=6 data-line-end=7 ><a id="DEMO_6"></a>DEMO:</h3>
 <p class="has-line-data" data-line-start="8" data-line-end="9"><a href="https://melodious-kitten-3f3ce4.netlify.app/">https://melodious-kitten-3f3ce4.netlify.app/</a></p>
+<p>video interactivo</p>
 <p class="has-line-data" data-line-start="8" data-line-end="9"><a href="https://drive.google.com/file/d/1X8tAMwuLE52e6axF-rOZBvbkW7_3yiN9/view?usp=sharing">https://drive.google.com/file/d/1X8tAMwuLE52e6axF-rOZBvbkW7_3yiN9/view?usp=sharing</a></p>
 
 <p class="has-line-data" data-line-start="10" data-line-end="11">Para usar este proyecto y editarlo. necesitas instalar desde la consola las siguientes librerias:</p>
