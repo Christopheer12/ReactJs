@@ -1,0 +1,14 @@
+*El readme está incompleto, faltan versionados y el para que de cada dependencias que usaste. 
+Está bien el deploy (en cuenta del gif, que quedó como convención del curso).
+
+Funcionamiento:
+   No funciona el Loading del home.
+   La navegación está perfecta en todas las secciones y categorías. 
+   Cuando vas al cart y está vacío, te muestra un cartel y un botón para volver.
+   El Cart agrega correctamente los items, es consistente. El botón para agregar debería cuando se apreta debe cambiar y sacar el count. Y debería resetearse el count. 
+   Está bien el detalle del cart. 
+   El icono NO suma las cantidades de los productos.
+   Las funciones del cart operan correctamente.
+   No tiene form y sus validacionesl. 
+   La orden de compra NO se realiza correctamente. Se debe mostrar el id de la orden, para el usuario y para mi para poder ver si se inserto en firestore. 
+Corregí lo del id, y la mayoría de las cosas porque sino no te va a alcanzar para la aprobación. 
