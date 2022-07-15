@@ -21,7 +21,6 @@ const Count = ({ inicio, onAdd }) => {
 
     }
 
-
     return (
         <div>
             <p>Quieres llevarte: {count} Unidades</p>

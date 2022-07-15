@@ -7,9 +7,6 @@ import Cart from './components/Cart/Cart';
 import { CartContextProvider } from './components/Context/CartContext';
 
 
-
-
-
 function App() {
 
 
