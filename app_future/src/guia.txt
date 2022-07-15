@@ -5,5 +5,6 @@ Funcionamiento:
    *El Cart agrega correctamente los items, es consistente. El botón para agregar debería cuando se apreta debe cambiar y sacar el count. Y debería resetearse el count. 
    * El icono NO suma las cantidades de los productos.
    *No tiene form y sus validacionesl. 
+   
    * La orden de compra NO se realiza correctamente. Se debe mostrar el id de la orden, para el usuario y para mi para poder ver si se inserto en firestore. 
 Corregí lo del id, y la mayoría de las cosas porque sino no te va a alcanzar para la aprobación. 
