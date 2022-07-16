@@ -1,5 +1,3 @@
-*El readme está incompleto, faltan versionados y el para que de cada dependencias que usaste. (preguntar, pero actualizadfo 14/07)
-
 Funcionamiento:
    *No funciona el Loading del home.(no se aque se refiere)
    *El Cart agrega correctamente los items, es consistente. El botón para agregar debería cuando se apreta debe cambiar y sacar el count. Y debería resetearse el count. 

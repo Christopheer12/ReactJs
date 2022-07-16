@@ -31,7 +31,7 @@ const Count = ({ inicio, onAdd }) => {
             <button onClick={subirACarrito}>agregar al carrito</button>
 
             <Link to='/'>
-                <button onClick={Loading}>seguir comprando</button>
+                <button onClick>seguir comprando</button>
             </Link>
 
         </div>
