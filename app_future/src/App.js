@@ -5,8 +5,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NoExiste from './components/NoExiste/NoExiste'
 import Cart from './components/Cart/Cart';
 import { CartContextProvider } from './components/Context/CartContext';
-
-
 function App() {
 
 
