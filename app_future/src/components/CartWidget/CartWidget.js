@@ -1,6 +1,11 @@
+import { useCartContext } from '../Context/CartContext'
 const CartWidget =()=>{
+    const { cantidadTotal } = useCartContext()
     return(
-        <a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        <div> 
+        <div><a class="nav-link" href="#">Tienes {cantidadTotal()} articulos en tu <i class="fa-solid fa-cart-shopping"></i></a></div>
+       
+        </div>
         )
         
 }

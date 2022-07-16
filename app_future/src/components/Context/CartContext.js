@@ -34,7 +34,9 @@ const EliminarItem =(id)=>{
     const precioTotal =()=>{
         return cart.reduce((acum,i)=> acum + i.cantidad * i.precio, 0)
     }
-
+    const cantidadTotal =()=>{
+        return cart.reduce((acum,i)=> acum + i.cantidad , 0)
+    }
 
     return (
         <CartContext.Provider
@@ -44,6 +46,7 @@ const EliminarItem =(id)=>{
                 vaciarCarrito,
                 EliminarItem,
                 precioTotal,
+                cantidadTotal
                
             }}>
             {children}
