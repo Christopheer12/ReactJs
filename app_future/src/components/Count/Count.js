@@ -25,8 +25,8 @@ const Count = ({ inicio, onAdd }) => {
         <div>
             <p>Quieres llevarte: {count} Unidades</p>
 
-            <button onClick={menos}>-</button>
-            <button onClick={mas}>+</button>
+            <button onClick={menos}>➖</button>
+            <button onClick={mas}>➕</button>
 
             <button onClick={subirACarrito}>agregar al carrito</button>
 

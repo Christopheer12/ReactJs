@@ -48,7 +48,7 @@ const Cart = () => {
         </li>)}
       </ul>
       <div>
-        <button onClick={vaciarCarrito}> Vaciar carrito</button>
+        <button onClick={vaciarCarrito}> Vaciar carrito 🗑</button>
       </div>
 
       <Link to='/'>
