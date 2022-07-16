@@ -19,15 +19,16 @@ const Cart = () => {
       const nombre = ItemDetail.nombre
       const precio = ItemDetail.precio * ItemDetail.cantidad
       const cantidad = ItemDetail.cantidad
-      swal("Pedido enviado!", " Ya puede borra el carrito o cerrar la pagina!", "success");
       return { id, nombre, precio,cantidad }
 
       
     })
     const db = getFirestore()
     const orderColletion = collection(db, 'orders')
-    addDoc(orderColletion, orden)
-    .then(rest=>(rest))
+    addDoc(orderColletion, orden).then(rest=>{
+      swal(`Pedido #${rest.id} enviado!`, `Ya puede borra el carrito o cerrar la pagina! `, 'success');
+
+    })
   }
   return (
     <div>
