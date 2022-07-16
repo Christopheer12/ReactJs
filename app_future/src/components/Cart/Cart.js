@@ -44,7 +44,7 @@ const Cart = () => {
           {item.estado}
 
           Cantidad agregada {item.cantidad}
-          <button onClick={() => EliminarItem(item.id)}>Eliminar</button>
+          <button onClick={() => EliminarItem(item.id)}>Eliminar🧹</button>
         </li>)}
       </ul>
       <div>
@@ -52,11 +52,11 @@ const Cart = () => {
       </div>
 
       <Link to='/'>
-                <button onClick={Loading}>seguir comprando</button>
+                <button onClick={Loading}>seguir comprando🛒</button>
             </Link>
       <p>el precio total del carrito es : ${precioTotal()}</p>
       <div>
-        <button onClick={finalizarCompra}> Terminar compra</button>
+        <button onClick={finalizarCompra}> Terminar compra💳</button>
       </div>
     </div>
   )
