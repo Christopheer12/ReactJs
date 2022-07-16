@@ -1,5 +1,5 @@
 Funcionamiento:
-   *No funciona el Loading del home.(no se aque se refiere)
+   se agrego Loading al home/categorias
    *El Cart agrega correctamente los items, es consistente. El botón para agregar debería cuando se apreta debe cambiar y sacar el count. Y debería resetearse el count. 
    * El icono NO suma las cantidades de los productos.
    *No tiene form y sus validacionesl. 
