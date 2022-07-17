@@ -104,9 +104,9 @@ const Registro = () => {
                         Acepto terminos y condiciones
                     </label>
                 </div>
-                <button type="submit" className="btn btn-primary">
+                {/* <button type="submit" className="btn btn-primary">
                     Registrarse
-                </button>
+                </button> */}
             </form>
         </div>
     );
