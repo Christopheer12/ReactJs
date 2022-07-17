@@ -3,7 +3,7 @@ const CartWidget =()=>{
     const { cantidadTotal } = useCartContext()
     return(
         <div> 
-        <div><a class="nav-link" href="#">Tienes {cantidadTotal()} articulos en tu <i class="fa-solid fa-cart-shopping"></i></a></div>
+        <div><p>Tienes {cantidadTotal()} articulos en tu <i className="fa-solid fa-cart-shopping"></i></p></div>
        
         </div>
         )
