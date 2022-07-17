@@ -5,6 +5,7 @@ import { useCartContext } from '../Context/CartContext'
 import { Loading } from '../../utils/Loading/Loading'
 import swal from "sweetalert"
 import { Form } from '../../utils/Form/Form'
+import Registro from '../../utils/Form/DatosUsuario'
 
 const Cart = () => {
   const { cart, vaciarCarrito, EliminarItem, precioTotal } = useCartContext()
@@ -60,6 +61,7 @@ const Cart = () => {
       <h4>Si desea continuar con la compra ingrese estos datos</h4>
       <div>
         <Form/>
+        <Registro/>
         <button onClick={finalizarCompra}> Terminar compra💳</button>
       </div>
     </div>

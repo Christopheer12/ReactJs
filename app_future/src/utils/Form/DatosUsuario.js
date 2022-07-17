@@ -1,4 +1,4 @@
-import { CartContext } from '../../contexts/CartContext';
+/* import { CartContext } from '../../contexts/CartContext'; */
 import React, {  useState,useContext } from 'react';
 
 import swal from 'sweetalert';
@@ -9,7 +9,7 @@ const Registro = () => {
     const [direccion, setDireccion] = useState('');
     const [telefono, setTelefono] = useState('');
 
-    const { addInformation } = useContext(CartContext);
+ /*    const { addInformation } = useContext(CartContext); */
 
     const onSubmit = (e) => {
         e.preventDefault();
@@ -22,12 +22,12 @@ const Registro = () => {
             return;
         }
 
-        addInformation({
+     /*    addInformation({
             nombre,
             email,
             direccion,
             telefono,
-        });
+        }); */
 
         swal('Exito', 'Se ha registrado correctamente', 'success');
     };
